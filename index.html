@@ -1,0 +1,47 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>TrolloweWartośći</title>
+    <link rel="icon" type="x-icon" href="icon.png">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>TrolloweWartośći</h1>
+    <hr>
+    <img src="" id="banner">
+    <button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Kliknij tu by rozpocząć!</button>
+    
+    <h2>Ile jest pytań?</h2>
+        <p>Test ma <b><u><span id="numOfQuestions"></span></u></b> pytań.</p>
+    <h2>Co to za teścik??</h2>
+  <p>Ogólnie to możesz tu sprawdzić czy jesteś trollem, hehe śmieszkem lub poważniakiem.</p>
+    <h2>Pytania lub odpowiedzi są złe?</h2>
+    <p>Napisz na github o tym np.</p>
+    <h2>Ogólnie to teścik przerobiony.</h2>
+    <p>Teścik przerobiony.</p>
+        <h2>Licencje jakieś itp.</h2>
+    <p>Test był oparty na teśćie SapplyValues a on na 8Values i tu jakaś licencja jest chyba. Wgl to teścik wydany na tej samej licencji jest. <a href="LICENSE">A licencja jakaś czy inne coś jest tu</a>.</p>
+        
+    <script type="application/javascript" src="questions.js"></script>
+    <script type="text/javascript">
+        document.getElementById("numOfQuestions").innerHTML = questions.length;
+
+        window.onload = function() {
+            var background = new Image();
+            background.onload = function() {
+                var c = document.createElement("canvas");
+                c.width = 1850;
+                c.height = 1300;
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#EEEEEE"
+                ctx.fillRect(0, 0, 1850, 1300);
+                ctx.drawImage(background, 0, 0);
+    
+                document.getElementById("banner").src = c.toDataURL();
+            }
+            background.src = "./compass.png";
+        }
+    </script>
+</body>
