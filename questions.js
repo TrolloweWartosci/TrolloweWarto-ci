@@ -12,7 +12,7 @@ questions =  [
     {"id": 8, "question": "Czy odpowiednim jest użycie celowych błędów ortograficznych, aby zwiększyć skuteczność trollingu lub baitowania?", "effects": {"prog": -2}},
     {"id": 9, "question": "Czy błędy ortograficzne są dla ciebie szczególnie rażące?", "effects": {"prog": 2}},
     {"id": 10, "question": "Czy atakujesz innych użytkowników za najdrobniejsze literówki?", "effects": {"prog": 2}},
-    {"id": 11, "question": "Czy troll po zostaniu wykrytym, powinien uznać to jako porażkę?", "effects": {"auth": 1}},
+    {"id": 11, "question": "Czy troll po zostaniu zdemaskowanym, powinien uznać to jako porażkę?", "effects": {"auth": 1}},
     {"id": 12, "question": "Moje komentarze są przepełnione sarkazmem i ironią.", "effects": {"auth": -1}},
     {"id": 13, "question": "Pisze niepoważne komentarze, lecz trollingiem bym tego nie nazwał.", "effects": {"auth": -1}},
     {"id": 14, "question": "Każdy niepoważny użytkownik to troll.", "effects": {"auth": 1}},
